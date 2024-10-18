@@ -1,5 +1,7 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'American Typewriter', 'Courier New', serif;
+  --light: rgba(223, 223, 223, 1);
+  --dark: rgb(28, 29, 33, 1);
   line-height: 1.5;
   font-weight: 400;
 
@@ -27,10 +29,22 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: "American Typewriter", "Courier Prime", Courier, monospace;
 }
 
-h1 {
-  font-size: 3.2em;
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px;
   line-height: 1.1;
 }
 
@@ -60,15 +74,58 @@ button:focus-visible {
   padding: 1em;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+#port-photo img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+.project-img {
+  width: 250px; /* Set the default width to 250 pixels */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 100%;
+}
+
+.flexbody {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns across */
+  gap: 20px; /* Space between the cards */
+  margin-top: 20px; /* Space above the grid */
+}
+
+.card-header {
+  background-color: var(--dark); /* Dark background */
+  color: var(--light); /* Light text color */
+  padding: 10px; /* Add some padding for better spacing */
+  text-align: center; /* Center the text */
+}
+
+.card-body {
+  display: flex; 
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically, if needed */
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .flexbody {
+    grid-template-columns: 1fr; /* 1 column on smaller screens */
   }
-  a:hover {
-    color: #747bff;
+
+  .card {
+    width: 90%; /* Ensure cards take up most of the width on mobile */
+    margin-bottom: 20px;
   }
-  button {
-    background-color: #f9f9f9;
+  html {
+    font-size: 14px;
   }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
 }

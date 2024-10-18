@@ -1,15 +1,27 @@
 export default function About() {
   return (
     <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+      <h2>ABOUT ME</h2>
+      <div id="port-photo">
+          <img src="/assets/images/warrenshan.jpeg" alt="Warren Craig Shan portrait" />
+      </div>
+      <div className="flexbody">
+        <article>
+          <p>NAME: Warren Craig Shan<br />
+            DATE OF BIRTH: 10th June 1972<br />
+            NATIONALITY: Australian<br />
+            EYE OF COLOR: Brown<br />
+            GENDER: Male<br />
+            OCCUPATION: Datacenter Technical Specialist<br />
+            <br />
+            INFORMATION<br />
+            1. Attended Macquarie University in Australia with a major in Computer Science<br />
+            2. Served as a computer specialist for the US Department of State between 2001 and 2009<br />
+            3. Conferred the U.S. Department of State Meritorious Medal in 2006<br />
+            4. Published a novel titled Abandoned in 2015.
+          </p>
+        </article>
+      </div>
     </div>
   );
 }

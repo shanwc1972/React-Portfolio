@@ -1,0 +1,86 @@
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space between the title and nav items */
+    align-items: center; /* Vertically center the content */
+    padding: 10px 20px; /* Add padding around the header */
+    background-color: #f8f9fa; /* Optional: a light background color */
+
+    background-image: url('assets/images/vinyl-texture.jpg');
+    background-size: cover; /* Makes sure the image covers the entire header */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 150px; /* Set height for the header container to ensure the image is visible */
+  }
+  
+.header-title {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: "American Typewriter", "Courier Prime", Courier, monospace;
+    font-weight: bold;
+    color: var(--light); 
+  }
+  
+  .nav.nav-tabs {
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.8rem;
+    font-family: "American Typewriter", "Courier Prime", Courier, monospace;
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-left: 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    padding: 10px;
+    color: #00aaaa; /* Make the nav link color aqua */
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+    color: #00aaaa; /* Change the active nav color for contrast */
+    border-bottom: 2px solid #ffdd57;
+  }
+
+  /* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+      flex-direction: column; /* Stack the title and nav vertically */
+      height: auto; 
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .header-title {
+      font-size: 1.8rem; /* Smaller font size on mobile */
+      text-align: center; 
+      margin-bottom: 10px; /* Add space between the title and nav */
+    }
+  
+    .nav.nav-tabs {
+      flex-direction: column; /* Stack nav items vertically */
+      align-items: center; /* Center nav items */
+      font-size: 1.4rem; /* Smaller font size on mobile */
+    }
+  
+    .nav-item {
+      margin: 5px 0; /* Adjust spacing between nav items */
+    }
+  }
+  
+  /* Even smaller devices (portrait phones, less than 480px) */
+  @media (max-width: 480px) {
+    .header-container {
+      padding: 5px; /* Further reduce padding */
+    }
+  
+    .header-title {
+      font-size: 1.5rem; /* Smaller font size for extra small screens */
+    }
+  
+    .nav.nav-tabs {
+      font-size: 1.3rem; /* Further reduce nav font size */
+    }
+  }

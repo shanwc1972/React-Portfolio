@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import './Header.css';
 
 const navItems = [
   { name: 'About', path: '/about' },
@@ -7,7 +8,7 @@ const navItems = [
   { name: 'Resume', path: '/resume' },
 ];
 
-function NavTabs({ currentPage, handlePageChange }) {
+function Navigation({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">
       {navItems.map((item) => (
@@ -24,4 +25,13 @@ function NavTabs({ currentPage, handlePageChange }) {
   );
 }
 
-export default NavTabs;
+function Header() {
+  return (
+    <header className="header-container">
+      <h1 className="header-title">SHANWC1972</h1>
+      <Navigation />
+    </header>
+  );
+}
+
+export default Header;

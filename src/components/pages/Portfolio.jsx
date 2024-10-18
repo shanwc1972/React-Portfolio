@@ -1,22 +1,54 @@
-export default function Blog() {
+import React from 'react';
+import Project from '../Project'; // Import the Project component
+
+export default function Portfolio() {
   return (
-    <div>
+    <div className="container">
       <h1>Portfolio Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      <div className="flexbody">
+        <Project
+          title="Panda Reserve"
+          imgSrc="./assets/images/panda.jpg"
+          imgAlt="Welcome to the Panda reserve"
+          link="https://shanwc1972.github.io/mini-project/"
+          github="https://github.com/shanwc1972/mini-project"
+        />
+        <Project
+          title="Horiseon Marketing"
+          imgSrc="./assets/images/horiseon.jpg"
+          imgAlt="Horiseon Marketing"
+          link="https://shanwc1972.github.io/module1-challenge"
+          github="https://github.com/shanwc1972/module1-challenge"
+        />
+        <Project
+          title="Employee Payroll Tracker"
+          imgSrc="./assets/images/employeepayrolltracker.png"
+          imgAlt="Employee Payroll Tracker"
+          link="https://shanwc1972.github.io/employee-payroll-tracker"
+          github="https://github.com/shanwc1972/employee-payroll-tracker"
+        />
+        <Project
+          title="Weather Dashboard"
+          imgSrc="./assets/images/weatherdashboard.png"
+          imgAlt="Weather dashboard"
+          link="https://shanwc1972.github.io/weather-dashboard"
+          github="https://github.com/shanwc1972/weather-dashboard"
+        />
+        <Project
+          title="MVC Techblog"
+          imgSrc="./assets/images/mvctechblog.png"
+          imgAlt="MVC Techblog"
+          link="https://mvc-techblog-dk8f.onrender.com/"
+          github="https://github.com/shanwc1972/mvc-techblog"
+        />
+        <Project
+          title="Focustrack"
+          imgSrc="./assets/images/Focustrack.png"
+          imgAlt="Focustrack"
+          link="https://focustrack.onrender.com"
+          github="https://github.com/Cbeattie97/FocusTrack"
+        />
+      </div>
     </div>
   );
 }
