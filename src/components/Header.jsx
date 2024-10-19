@@ -5,7 +5,7 @@ const navItems = [
   { name: 'About', path: '/about' },
   { name: 'Portfolio', path: '/portfolio' },
   { name: 'Contact', path: '/contact' },
-  { name: 'Resume', path: '/resume' },
+  { name: 'Resumé', path: '/resume' },
 ];
 
 function Navigation({ currentPage, handlePageChange }) {

@@ -1,10 +1,10 @@
 export default function About() {
   return (
     <div>
-      <h1>ABOUT ME</h1>
-      <div id="port-photo">
+      <h2>ABOUT ME</h2>
+      <figure id="port-photo">
           <img src="/assets/images/warrenshan.jpeg" alt="Warren Craig Shan portrait" />
-      </div>
+      </figure>
       <div className="flexbody">
         <article>
           <p>NAME: Warren Craig Shan<br />

@@ -13,12 +13,18 @@ function Form() {
 
     // Update the state based on the name of the input
     if (name === 'email') {
-      setEmail(value);
-    } else if (name === 'name') {
-      setName(value); // Updated to match the lowercase state 'name'
-    } else if (name === 'message') {
-      setMessage(value); // Added handling for the message field
-    }
+        setEmail(value);
+        // Validate email as it is entered
+        if (!validateEmail(value)) {
+          setErrorMessage('Email is invalid');
+        } else {
+          setErrorMessage(''); // Clear error if valid
+        }
+      } else if (name === 'name') {
+        setName(value);
+      } else if (name === 'message') {
+        setMessage(value);
+      }
   };
 
   const handleFormSubmit = (e) => {
