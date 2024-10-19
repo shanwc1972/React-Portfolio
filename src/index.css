@@ -1,7 +1,7 @@
 :root {
   font-family: 'American Typewriter', 'Courier New', serif;
   --light: rgba(223, 223, 223, 1);
-  --dark: #1b1b1b;
+  --dark: rgba(30, 20, 20, 1);
   line-height: 1.5;
   font-weight: 400;
 
@@ -45,15 +45,19 @@ article {
 body {
   margin: 0;
   min-width: 320px;
-  min-height: 100vh;
-  background-color: var(--dark);
+  /* min-height: 100vh; */
+  /* background-color: var(--dark); */
   color: var(--light);
   font-family: "American Typewriter", "Courier Prime", Courier, monospace;
+
+  /* Linear gradient from dark (top) to light (bottom) */
+  background: linear-gradient(to bottom, var(--dark) 85%, var(--light) 100%);
 }
 
 html {
   font-size: 16px;
 }
+
 
 h1,
 h2,

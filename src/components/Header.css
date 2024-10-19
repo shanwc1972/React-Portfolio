@@ -17,7 +17,7 @@
     font-size: 2.5rem;
     font-family: "American Typewriter", "Courier Prime", Courier, monospace;
     font-weight: bold;
-    color: var(--light); 
+    color: #d00000; 
   }
   
   .nav.nav-tabs {
