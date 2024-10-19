@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div>
-      <h2>ABOUT ME</h2>
+      <h1>ABOUT ME</h1>
       <div id="port-photo">
           <img src="/assets/images/warrenshan.jpeg" alt="Warren Craig Shan portrait" />
       </div>

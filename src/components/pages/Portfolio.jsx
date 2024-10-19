@@ -4,7 +4,7 @@ import Project from '../Project'; // Import the Project component
 export default function Portfolio() {
   return (
     <div className="container">
-      <h1>Portfolio Page</h1>
+      <h1>PORTFOLIO PAGE</h1>
       <div className="flexbody">
         <Project
           title="Panda Reserve"
