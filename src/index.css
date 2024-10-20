@@ -242,6 +242,32 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  .dossier-container {
+    width: 90%; /* Use 90% of the width on smaller screens */
+  }
+
+  /* Adjust the flex direction for mobile */
+  .dossier-content {
+    flex-direction: column; /* Stack the photo and text vertically */
+    align-items: center; /* Center the content */
+  }
+
+  /* Adjust the text and image */
+  .dossier-details {
+    font-size: 1rem; /* Slightly smaller text on mobile */
+    text-align: center; /* Center text on mobile */
+  }
+
+  .dossier-photo img {
+    max-width: 100%; /* Allow the image to scale down */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .open-button {
+    width: 100%; /* Make the button full-width on mobile */
+    padding: 15px; /* Increase padding for better touch target */
+  }
+
   .flexbody {
     grid-template-columns: 1fr; /* 1 column on smaller screens */
   }
@@ -261,5 +287,14 @@ button:hover {
   h3 {
     font-size: 1.2rem;
   }
+}
 
+@media (max-width: 480px) {
+  .dossier-details {
+    font-size: 0.9rem; /* Smaller text for extra small screens */
+  }
+
+  .open-button {
+    font-size: 14px; /* Adjust button font size */
+  }
 }
