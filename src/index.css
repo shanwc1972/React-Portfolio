@@ -70,6 +70,85 @@ h6 {
   font-weight: bold;
 }
 
+/* Dossier container */
+.dossier-container {
+  width: 100%;
+  max-width: 800px; /* Adjust the max-width for better layout control */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Dossier Cover Styling */
+.dossier-cover {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #1abc9c;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+
+/* Dossier content (hidden initially) */
+.dossier-content {
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.8s ease, opacity 0.8s ease;
+  padding: 20px;
+  background-color: #ecf0f1;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Dossier details and photo container */
+.dossier-content {
+  display: flex;
+  justify-content: space-between; /* Aligns text and photo */
+  align-items: flex-start;
+  gap: 20px; /* Adds space between the text and image */
+}
+
+/* Dossier details (text area) */
+.dossier-details {
+  flex: 1; /* Ensures the text takes up more space */
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+/* Dossier photo styling */
+.dossier-photo img {
+  max-width: 250px; /* Set a maximum width for the image */
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+/* Style the button */
+.open-button {
+  background-color: #1abc9c;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.open-button:hover {
+  background-color: #16a085;
+}
+
+/* When dossier is opened */
+.dossier-container.open .dossier-content {
+  display: flex;
+  max-height: 1000px;
+  opacity: 1;
+  transition: max-height 0.8s ease, opacity 0.8s ease;
+}
+
 .form {
   padding: 20px; 
   background-color: #f9f9f9; 
@@ -124,21 +203,6 @@ button:hover {
   position: fixed;
   inset: auto 0 0 0;
   padding: 1em;
-}
-
-#port-photo {
-  display: flex;
-  justify-content: center; /* Horizontally centers the image */
-  margin-bottom: 20px; /* Adds some space below the image */
-}
-
-#port-photo img {
-  border: 2px solid #c0c0c0; /* Silver border like a dossier photo */
-  border-radius: 10px;
-  max-width: 100%;
-  height: auto;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  max-height: 300px;
 }
 
 .project-img {
