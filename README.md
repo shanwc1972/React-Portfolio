@@ -17,7 +17,8 @@ The application / page can be accessed at: https://coruscating-raindrop-3be661.n
 
 The following image shows the application's appearance and functionality:
 
-![About me screenshot]](<Screenshot 2024-10-20 at 10.21.10 pm.png>)
+![Screenshot 2024-10-20 at 10 21 10 pm](https://github.com/user-attachments/assets/b0259c31-693a-4b0a-9424-d6211d4ed1dc)
+
 
 The application has navigation links along the top called About, Portfolio, Contact and Resumé. Clicking any of these links will change the body of the page to refelct the content as follows:
 
